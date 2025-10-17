@@ -45,9 +45,17 @@ const Projects = () => {
       title: "MM Bier Website",
       description:
         "Landing page for a craft beer company, built with Typescript and Tailwind CSS.",
-      tech: ["Typescript", "CSS", "Vite"],
+      tech: ["Typescript", "CSS", "Vite", "React"],
       github: "https://github.com/DanielSDewes/mmbier",
       demo: "https://mmbier.vercel.app/",
+    },
+    {
+      title: "Adapter Pattern Design",
+      description:
+        "An website for an apresentation about the Adapter Design Pattern in portuguese, utilizing Typescript, React and Tailwind CSS.",
+      tech: ["Typescript", "CSS", "React"],
+      github: "https://github.com/DanielSDewes/Adapter-apresentacao",
+      demo: "https://adapter-apresentacao.vercel.app/",
     },
   ];
 
@@ -100,7 +108,7 @@ const Projects = () => {
                       Code
                     </a>
                   </Button>
-                  {project.title === "MM Bier Website" && (
+                  {(project.title === "MM Bier Website" || project.title === "Adapter Pattern Design") && (
                     <Button variant="secondary" size="sm" asChild>
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />

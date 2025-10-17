@@ -153,9 +153,12 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" variant="hero" className="w-full">
+                <Button type="submit" variant="hero" className="w-full opacity-60 cursor-not-allowed" disabled aria-disabled={true}>
                   Send Message
                 </Button>
+                <p className="text-sm text-muted-foreground mt-2 text-center">
+                  This section is under development!
+                </p>
               </form>
             </div>
 
