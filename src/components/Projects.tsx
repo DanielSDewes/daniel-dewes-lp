@@ -10,10 +10,18 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Fokus",
+      description:
+        "A simple website that helps you stay focused through the Pomodoro Technique with a clean and minimalistic design and the option to play a focus music.",
+      tech: ["HTML", "CSS", "JavaScript", "Dom manipulation through JS"],
+      github: "https://github.com/DanielSDewes/Fokus",
+      demo: "https://fokus-dun.vercel.app/",
+    },
+    {
       title: "OnlineChat",
       description:
         "A live chat with modern interface, failure tolerance and distributed architecture.",
-      tech: ["Distributed Systems", "Real-time", "Chat"],
+      tech: ["Distributed Systems", "Real-time", "Chat", "Typescript", "React", "Tailwind CSS", "Web Sockets"],
       github: "https://github.com/DanielSDewes/ChatOnline",
       //demo: "https://github.com/DanielSDewes/ChatOnline",
     },
@@ -23,7 +31,7 @@ const Projects = () => {
         "A site for adding and timing your tasks and studies, built with TypeScript.",
       tech: ["TypeScript", "Task Management", "Timer"],
       github: "https://github.com/DanielSDewes/ControlaEstudos",
-      // demo: "https://github.com/DanielSDewes/ControlaEstudos",
+      demo: "https://controla-estudos.vercel.app/",
     },
     {
       title: "Weather and News",
@@ -56,6 +64,14 @@ const Projects = () => {
       tech: ["Typescript", "CSS", "React"],
       github: "https://github.com/DanielSDewes/Adapter-apresentacao",
       demo: "https://adapter-apresentacao.vercel.app/",
+    },
+    {
+      title: "Student Journey",
+      description:
+        "An website for an apresentation about the the journey of a student ingressing in the university, made for an assignment in portuguese, utilizing Typescript, React and Tailwind CSS.",
+      tech: ["Typescript", "CSS", "React"],
+      github: "https://github.com/DanielSDewes/jornada-estudante-uri",
+      demo: "https://jornada-estudante-uri.vercel.app/",
     },
   ];
 
@@ -108,7 +124,7 @@ const Projects = () => {
                       Code
                     </a>
                   </Button>
-                  {(project.title === "MM Bier Website" || project.title === "Adapter Pattern Design") && (
+                  {(project.title === "Fokus" || project.title === "Studies Controller" || project.title === "MM Bier Website" || project.title === "Adapter Pattern Design" || project.title === "Student Journey") && (
                     <Button variant="secondary" size="sm" asChild>
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
